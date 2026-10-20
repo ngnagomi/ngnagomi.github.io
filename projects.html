@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects – Nagomi Gopinath</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="career.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <p class="sidebar-name">Nagomi Gopinath</p>
+            <ul>
+                <li><a href="index.html">— Home</a></li>
+                <li><a href="academia.html">— Academia</a></li>
+                <li><a href="career.html">— Career</a></li>
+                <li><a href="projects.html" class="active">+ Projects</a></li>
+                <li><a href="qualifications.html">— Qualifications</a></li>
+                <li><a href="other.html">— Other</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+        </nav>
+
+        <main class="content-panel">
+
+            <h2 class="section-title">Projects</h2>
+
+            <!-- AnySkin Slip Detection -->
+            <div class="project-card">
+                <div class="project-image project-image-placeholder">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+                <div class="project-body">
+                    <h3 class="job-role">AnySkin Slip Detection</h3>
+                    <p class="project-description">Slip detection from magnetic tactile sensor data using USDConvNetLite, a ~5k-parameter residual CNN small enough for real-time use on embedded hardware. Compares raw, FFT, and high-pass filtered inputs on the Pollen Robotics AnySkin dataset, reaching 83.2% accuracy under leave-one-object-out evaluation.</p>
+                    <a class="project-link" href="https://github.com/ngnagomi/anyskin_slip_detection" target="_blank"><i class="fa-brands fa-github"></i><span>View on GitHub</span></a>
+                    <p class="job-skills">Skills: Python · PyTorch · Machine Learning · Tactile Sensing · Signal Processing</p>
+                </div>
+            </div>
+
+            <!-- Diffbot EKF Sensor Fusion -->
+            <div class="project-card">
+                <img class="project-image" src="images/projects/diffbot_ekf.jpg" alt="Square path plot comparing ground truth, wheel odometry and EKF estimate">
+                <div class="project-body">
+                    <h3 class="job-role">Wheel Odometry + IMU Sensor Fusion with an EKF</h3>
+                    <p class="project-description">A simulated differential-drive robot in Gazebo that fuses wheel odometry and gyroscope data with an Extended Kalman Filter. Cut final position error on a 2 m square from 0.90 m to 0.075 m, and was stress-tested with injected sensor faults (spikes, dropouts, wheel slip) and covariance tuning.</p>
+                    <a class="project-link" href="https://github.com/ngnagomi/diffbot_ekf_sensor_fusion" target="_blank"><i class="fa-brands fa-github"></i><span>View on GitHub</span></a>
+                    <p class="job-skills">Skills: ROS 2 · Gazebo · Python · Sensor Fusion · Kalman Filtering</p>
+                </div>
+            </div>
+
+            <!-- Weather Station -->
+            <div class="project-card">
+                <img class="project-image" src="images/projects/weather_station.jpg" alt="ESP-32 weather station with BME280 sensor and OLED display on a breadboard">
+                <div class="project-body">
+                    <h3 class="job-role">Weather Station with OLED HMI</h3>
+                    <p class="project-description">A real-time environmental monitoring system on an ESP-32 that reads a BME280 sensor and shows temperature and humidity on an SSD1306 OLED, with weather icons that change based on readings. Both devices share one I2C bus, with UART telemetry for debugging.</p>
+                    <a class="project-link" href="https://github.com/ngnagomi/weather_station_oled" target="_blank"><i class="fa-brands fa-github"></i><span>View on GitHub</span></a>
+                    <p class="job-skills">Skills: C++ · Arduino · ESP-32 · I2C · UART · Sensors</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

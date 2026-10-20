@@ -1,0 +1,72 @@
+/* Projects Page (builds on career.css) */
+
+/* Project Card */
+
+.project-card {
+    display: flex;
+    gap: 28px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.project-image {
+    flex: 0 0 220px;
+    width: 220px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+.project-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    color: #aaa;
+    font-size: 3rem;
+}
+
+.project-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.project-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    margin-right: 18px;
+    margin-bottom: 14px;
+}
+
+.project-link i {
+    margin-right: 6px;
+}
+ 
+.project-link span {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 200px;
+        flex-basis: auto;
+    }
+}
